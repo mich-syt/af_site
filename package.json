@@ -1,7 +1,7 @@
 {
   "name": "af_site",
   "version": "1.0.0",
-  "description": "Arts Fest WEsbite 2016",
+  "description": "Arts Fest Website 2016",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
