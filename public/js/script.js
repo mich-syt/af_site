@@ -6,7 +6,7 @@ $(window).on('load', function () {
 	// Takes the gutter width from the bottom margin of .post
 
 	var gutter = parseInt($('.post').css('marginBottom'));
-	var container = $('#posts');
+	var container = $('div#posts');
 	console.log(container);
 
 
