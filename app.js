@@ -17,6 +17,10 @@ app.get("/test", function (req, res) {
 	res.render('test', {title:'YOHO', message:'MEOWLALA'});
 }); 
 
+app.get("/testindex", function (req, res) {
+	res.render('index.pug');
+}); 
+
 app.listen(3000, function() {
     console.log("Listening at port 3000");
 });
