@@ -10,20 +10,16 @@ app.get('/jquery/jquery.js', function(req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.sendFile('/views/index.html', {root: __dirname});
+    res.render('index.pug', {title:'Arts Fest 2016', "splash": {"base": "img/fancy.gif", "cover": "img/cover_4_blur.jpg"}});
 });
 
-app.get("/test", function (req, res) {
-	res.render('test', {title:'YOHO', message:'MEOWLALA'});
-}); 
+//Obsolete
+// app.get("/test", function (req, res) {
+// 	res.render('test', {title:'YOHO', "splash": {"base": "img/fancy.gif", "cover": "img/cover_4_blur.jpg"}, "hello": "hi"});
+// }); 
 
 app.get("/arts_market", function (req, res) {
 	res.render('templates/arts_market', {});
-}); 
-
-
-app.get("/testindex", function (req, res) {
-	res.render('index.pug');
 }); 
 
 app.listen(3000, function() {
