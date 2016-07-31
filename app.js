@@ -21,6 +21,11 @@ app.get("/arts_market", function (req, res) {
 	res.render('templates/arts_market', {});
 }); 
 
+
+app.get("/testindex", function (req, res) {
+	res.render('index.pug');
+}); 
+
 app.listen(3000, function() {
     console.log("Listening at port 3000");
 });

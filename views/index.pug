@@ -1,0 +1,110 @@
+doctype html
+html(lang="en")
+include ./templates/head.pug
+
+body
+    // Navbar + Splash
+    div#navbar-full
+        div#navbar
+            include ./templates/navbar.pug
+
+        div.blurred-container
+            div.img-src(style="background-image: url('img/fancy.gif')")
+            div.img-src.blur(style="background-image: url('img/cover_4_blur.jpg')" ) <!-- image blur on scroll, custom.js -->
+            div.cover.black(data-color="black")
+
+    // GET SHIT DONE
+    div.main
+        div.container
+            div.intro-header.text-left
+                img.logoimg(src="img/green.png" alt="AF16")
+                hr
+                h1 (IM)POSSIBILITIES
+                h2 we dare you to be passionate.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    div.space
+        
+        div.gallery-container
+            div.row.no-gutters
+                div.col-lg-12.col-md-12.col-xs-12
+                    a.thumbnails(href="#"): img.img-responsive(src="img/carousel_blue.png" alt="")
+                div.col-lg-4.col-md-4.col-xs-12
+                    div.hovereffect
+                        img.img-responsive(src="img/carousel_green.png" alt="")
+                        div.overlay
+                            h2 Title Here
+                            a.info(href="#") description here
+                div.col-lg-4.col-md-4.col-xs-12
+                    a.thumbnails(href="#"): img.img-responsive(src="img/carousel_orange.png" alt="")
+                div.col-lg-4.col-md-4.col-xs-12
+                    a.thumbnails(href="#"): img.img-responsive(src="img/carousel_red.png" alt="")
+                div.col-lg-4.col-md-4.col-xs-12
+                    a.thumbnails(href="#"): img.img-responsive(src="img/sfdesign.jpg" alt="")
+                div.col-lg-4.col-md-4.col-xs-12
+                    a.thumbnails(href="#"): img.img-responsive(src="img/test.jpg" alt="")
+                div.col-lg-4.col-md-4.col-xs-12
+                    a.thumbnails(href="#"): img.img-responsive(src="img/test2.jpg" alt="")
+
+    div.full-img-divide
+        img.over(src="img/whitefull2.png" alt="")
+
+    div.posts-main
+        div.posts-container#workshops
+            h1(style="text-align:center;") Workshops
+
+            div#grid
+                div#posts
+                    div.post
+                        img(src="http://placehold.it/600x400")
+                        br
+                        br
+                        strong Title Goes Here
+                        br
+                        small Category
+                    div.post
+                        img(src="http://placehold.it/400x600")
+                        br
+                        br
+                        strong Title Goes Here
+                        br
+                        small Category
+                    div.post
+                        img(src="http://placehold.it/600x400")
+                        br
+                        br
+                        strong Title Goes Here
+                        br
+                        small Category
+                    div.post
+                        img(src="http://placehold.it/400x600")
+                        br
+                        br
+                        strong Title Goes Here
+                        br
+                        small Category
+                    div.post
+                        img(src="http://placehold.it/400x600")
+                        br
+                        br
+                        strong Title Goes Here
+                        br
+                        small Category
+                    div.post.cs2
+                        img(src="http://placehold.it/400x600")
+                        br 
+                        br
+                        strong Title Goes Here
+                        br
+                        small Category
+
+
+script(src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous")
+script(src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript")
+script(src="js/script.js")
+script(src="bootstrap3/js/bootstrap.js" type="text/javascript")
+script(src="js/gsdk-checkbox.js")
+script(src="js/gsdk-radio.js")
+script(src="js/gsdk-bootstrapswitch.js")
+script(src="js/get-shit-done.js")
+script(src="js/custom.js")
+script(src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js")           
