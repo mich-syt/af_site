@@ -19,8 +19,18 @@ app.get('/', function (req, res) {
 // }); 
 
 app.get("/arts_market", function (req, res) {
-	res.render('templates/arts_market', {});
+	res.render('arts_market', {title: 'Arts Market', "splash": {"base": "img/headers/Market.jpg", "cover": "img/cover_4_blur.jpg"}});
 }); 
+
+app.get("/event", function (req, res) {
+    res.render('event', {
+        title: 'Events Sample', 
+        "splash": {
+            "base": "img/headers/Market.jpg", 
+            "cover": "img/cover_4_blur.jpg",
+            "title": "This is EVENT",
+            "text": "Some description of the goddamn event" }})
+});
 
 app.listen(3000, function() {
     console.log("Listening at port 3000");

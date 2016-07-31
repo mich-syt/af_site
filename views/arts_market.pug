@@ -1,6 +1,6 @@
 doctype html 
 html(lang="en") 
-include ./head.pug
+include ./templates/head.pug
 
 head 
 	title= "Arts Market" 
@@ -10,7 +10,7 @@ body
 	// Navbar + Splash
 	div#navbar-full
 		div#navbar
-			include ./navbar.pug
+			include ./templates/navbar.pug
 
 		div.blurred-container
 			div.img-src(style="background-image: url('img/headers/Market.jpg')")
