@@ -17,6 +17,11 @@ app.get("/test", function (req, res) {
 	res.render('test', {title:'YOHO', message:'MEOWLALA'});
 }); 
 
+app.get("/arts_market", function (req, res) {
+	res.render('templates/arts_market', {});
+}); 
+
+
 app.get("/testindex", function (req, res) {
 	res.render('index.pug');
 }); 
