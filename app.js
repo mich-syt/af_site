@@ -1,4 +1,5 @@
 var express = require('express');
+var workshops = require('./workshops');
 var app = express();
 
 //Static folder for all assets
@@ -18,18 +19,20 @@ app.get('/', function (req, res) {
 // 	res.render('test', {title:'YOHO', "splash": {"base": "img/fancy.gif", "cover": "img/cover_4_blur.jpg"}, "hello": "hi"});
 // }); 
 
+app.get("/workshop/:event", function(req, res) {
+    res.render('event', workshops[req.params.event]);
+});
+
 app.get("/arts_market", function (req, res) {
-	res.render('arts_market', {title: 'Arts Market', "splash": {"base": "img/headers/Market.jpg", "cover": "img/cover_4_blur.jpg"}});
+	res.render('arts_market', {title: 'Arts Market', splash: {base: "img/headers/Market.jpg", cover: "img/cover_4_blur.jpg"}});
 }); 
 
 app.get("/event", function (req, res) {
     res.render('event', {
         title: 'Events Sample', 
         "splash": {
-            "base": "img/headers/Market.jpg", 
-            "cover": "img/cover_4_blur.jpg",
-            "title": "This is EVENT",
-            "text": "Some description of the goddamn event" }})
+            "base": "img/headers/Market.jpg"
+        }})
 });
 
 app.listen(3000, function() {
