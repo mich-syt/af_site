@@ -50,8 +50,8 @@ $(window).on('load', function () {
 			
 			// Ensures that all top-level elements have equal width and stay centered
 			
-			$('#posts, #grid').css('width', posts_width);
-			$('#grid').css({'margin': '0 auto'});
+			$('div#posts, div#grid').css('width', posts_width);
+			$('div#grid').css({'margin': '0 auto'});
         		
 		
 		
