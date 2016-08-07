@@ -1,0 +1,12 @@
+extends ./templates/layout.pug 
+
+block content 
+	div#description #{description}
+	br 
+	div#timing-and-venue: b #{timing} at #{venue}
+	div#fee: b Workshop fee: $#{fee}
+	div#size: b Limited slots available to first #{size} participants
+	br 
+	br
+	br
+	div#backbutton: a(href="/#workshops" style="color:white;background-color:black") < Back to Main Menu

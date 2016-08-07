@@ -1,5 +1,6 @@
 var express = require('express');
 var workshops = require('./workshops');
+var exhibitions = require('./exhibitions');
 var app = express();
 
 //Static folder for all assets
@@ -11,20 +12,40 @@ app.get('/jquery/jquery.js', function(req, res) {
 });
 
 app.get('/', function (req, res) {
-    res.render('index.pug', {title:'Arts Fest 2016', "splash": {"base": "img/fancy.gif", "cover": "img/cover_4_blur.jpg"}});
+    res.render('index.pug', {title:'Arts Fest 2016', "splash": {"base": "img/headers/headergif.gif", "cover": "img/cover_4_blur.jpg"}});
 });
-
-//Obsolete
-// app.get("/test", function (req, res) {
-// 	res.render('test', {title:'YOHO', "splash": {"base": "img/fancy.gif", "cover": "img/cover_4_blur.jpg"}, "hello": "hi"});
-// }); 
 
 app.get("/workshop/:event", function(req, res) {
-    res.render('event', workshops[req.params.event]);
+    res.render('workshop-content', workshops[req.params.event]);
 });
 
+app.get("/venues", function(req, res) {
+    res.render('venues');
+});
+
+app.get("/contact", function(req, res) {
+    res.render('contact');
+});
+
+app.get("/support", function(req, res) {
+    res.render('support');
+});
+
+
+app.get("/calender", function(req, res) {
+    res.render('calender');
+});
+
+
+app.get("/cinema", function(req, res) {
+    res.render('cinema');
+});
+
+app.get("/exhibition/:event", function(req, res) {
+    res.render('exhibition', exhibitions[req.params.event]);
+});
 app.get("/arts_market", function (req, res) {
-	res.render('arts_market', {title: 'Arts Market', splash: {base: "img/headers/Market.jpg", cover: "img/cover_4_blur.jpg"}});
+    res.render('arts_market', {title: 'Arts Market', splash: {base: "img/headers/Market.jpg", cover: "img/cover_4_blur.jpg"}});
 }); 
 
 app.get("/event", function (req, res) {
