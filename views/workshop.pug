@@ -1,12 +1,18 @@
 extends ./templates/layout.pug 
 
 block content 
-	div#description #{description}
-	br 
-	div#timing-and-venue: b #{timing} at #{venue}
-	div#fee: b Workshop fee: $#{fee}
-	div#size: b Limited slots available to first #{size} participants
-	br 
-	br
-	br
-	div#backbutton: a(href="/#workshops" style="color:white;background-color:black") < Back to Main Menu
+	div.main
+		div.container-fluid
+			div.col-sm-5.col-sm-offset-1
+				div#desc
+					h2 #{description}
+				br 
+				div#details
+					h4#timing-and-venue: b #{timing} at #{venue}
+					h4#fee: b Workshop fee: $#{fee}
+					h4#size: b Limited slots available to first #{size} participants
+				br 
+				br
+				br
+				div: a#backbutton(href="/#workshops") < Back to Main Menu
+			
