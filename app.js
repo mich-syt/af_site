@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 });
 
 app.get("/workshop/:event", function(req, res) {
-    res.render('workshop-content', workshops[req.params.event]);
+    res.render('workshop', workshops[req.params.event]);
 });
 
 app.get("/venues", function(req, res) {
@@ -43,17 +43,6 @@ app.get("/cinema", function(req, res) {
 
 app.get("/exhibition/:event", function(req, res) {
     res.render('exhibition', exhibitions[req.params.event]);
-});
-app.get("/arts_market", function (req, res) {
-    res.render('arts_market', {title: 'Arts Market', splash: {base: "img/headers/Market.jpg", cover: "img/cover_4_blur.jpg"}});
-}); 
-
-app.get("/event", function (req, res) {
-    res.render('event', {
-        title: 'Events Sample', 
-        "splash": {
-            "base": "img/headers/Market.jpg"
-        }})
 });
 
 app.listen(3000, function() {
