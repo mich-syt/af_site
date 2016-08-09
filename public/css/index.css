@@ -1382,12 +1382,6 @@ hr {
   transition: all 0.4s ease-in-out;
 }
 
-.hovereffect:hover h2 {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-}
-
 .hovereffect a.info {
   max-width: 80%;
   display: inline-block;
