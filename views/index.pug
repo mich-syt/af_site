@@ -4,7 +4,7 @@ block splash
     include ./templates/splashblur.pug
 block content
     // GET SHIT DONE
-    div.main
+    div.main#about
         div.container
             div.intro-header.text-left
                 img.logoimg(src="img/green.png" alt="AF16")
@@ -20,21 +20,30 @@ block content
                 div.col-lg-12.col-md-12.col-xs-12
                     a.thumbnails(href="#" style="width:100%;"): img.img-responsive(src="/img/carousel_blue.png" alt="" style="width:100%;")
                 div.col-lg-4.col-md-4.col-xs-12
-                    div.hovereffect
-                        img.img-responsive(src="img/carousel_green.png" alt="")
-                        div.overlay
-                            h2 Title Here
-                            a.info(href="#") description here
+                    a.thumbnails(href="/#workshops"):  img.img-responsive(src="img/carousel_green.png" alt="") 
+                    div.overlay
+                        h2 WORKSHOPS
                 div.col-lg-4.col-md-4.col-xs-12
-                    a.thumbnails(href="#"): img.img-responsive(src="/img/carousel_orange.png" alt="")
+                    a.thumbnails(href="/#performances"): img.img-responsive(src="/img/carousel_orange.png" alt="")
+                    div.overlay
+                        h2 PERFORMANCES
+                    
                 div.col-lg-4.col-md-4.col-xs-12
-                    a.thumbnails(href="#"): img.img-responsive(src="/img/carousel_red.png" alt="")
+                    a.thumbnails(href="/#exhibition"): img.img-responsive(src="/img/carousel_red.png" alt="")
+                    div.overlay
+                        h2 EXHIBITION 
                 div.col-lg-4.col-md-4.col-xs-12
                     a.thumbnails(href="#"): img.img-responsive(src="/img/sfdesign.jpg" alt="")
+                    div.overlay 
+                        h2 FILM SCREENING 
                 div.col-lg-4.col-md-4.col-xs-12
-                    a.thumbnails(href="#"): img.img-responsive(src="/img/test.jpg" alt="")
+                    a.thumbnails(href="/arts_market"): img.img-responsive(src="/img/test.jpg" alt="")
+                    div.overlay
+                        h2 ARTS MARKET 
                 div.col-lg-4.col-md-4.col-xs-12
                     a.thumbnails(href="#"): img.img-responsive(src="/img/test2.jpg" alt="")
+                    div.overlay
+                        h2 SHOP #DSBJ 
 
     div.full-img-divide
         img.over(src="img/whitefull2.png" alt="")
