@@ -36,6 +36,9 @@ app.get("/calender", function(req, res) {
     res.render('calender');
 });
 
+app.get("/arts_market", function(req, res) {
+	res.render('arts_market');
+});
 
 app.get("/cinema", function(req, res) {
     res.render('cinema');
