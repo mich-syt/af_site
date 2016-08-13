@@ -37,7 +37,7 @@ app.get("/calender", function(req, res) {
 });
 
 app.get("/arts_market", function(req, res) {
-	res.render('arts_market');
+	res.render('arts_market', {title:'Arts Market', splash: "/img/headers/Market/jpg"});
 });
 
 app.get("/cinema", function(req, res) {
