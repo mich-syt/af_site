@@ -100,5 +100,23 @@ module.exports = {
 		timing: "TBC",
 		fee: "5",
 		size: "TBC"
+	}, 
+	"waacking": {
+		title: "Waacking", 
+		splash: "http://placehold.it/1920x967", 
+		description: "Ever seen those crazy arms in Facebook videos? Or simply have a love for disco? Waack it away at Xiang Yi's Waacking Workshop!",
+		venue: "TBC", 
+		timing: "TBC",
+		fee: "5",
+		size: "20-30"
+	}, 
+	"streetjazz": {
+		title: "Street Jazz", 
+		splash:"http://placehold.it/1920x967", 
+		description: "Wanna get your inner diva out and get sassy? Take it away with Ben Chia's Street Jazz Workshop! ", 
+		venue: "TBC", 
+		timing: "TBC", 
+		fee: "5", 
+		size: "20-30" 
 	}
 }
