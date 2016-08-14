@@ -1,5 +1,5 @@
 var express = require('express');
-var workshops = require('./workshops');
+var workshops = require('./data/workshops');
 var exhibitions = require('./exhibitions');
 var app = express();
 
@@ -32,8 +32,8 @@ app.get("/support", function(req, res) {
 });
 
 
-app.get("/calender", function(req, res) {
-    res.render('calender');
+app.get("/calendar", function(req, res) {
+    res.render('calendar', {title: 'Calendar', splash: "https://placekitten.com/1920/976"});
 });
 
 app.get("/arts_market", function(req, res) {
