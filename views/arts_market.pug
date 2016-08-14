@@ -1,32 +1,23 @@
-doctype html 
-html(lang="en") 
-include ./templates/head.pug
+extends ./templates/layout.pug
 
-head 
-	title= "Arts Market" 
-	
-	
-body 
-	// Navbar + Splash
-	div#navbar-full
-		div#navbar
-			include ./templates/navbar.pug
+block content
 
-		div.blurred-container
-			div.img-src(style="background-image: url('img/headers/Market.jpg')")
-			div.img-src.blur(style="background-image: url('img/cover_4_blur.jpg')" ) <!-- image blur on scroll, custom.js -->
-			div.cover.black(data-color="black")
+    div.main(style="margin: 10% 10%;")
+        <!-- Gridder navigation -->
+        ul.gridder
+            li.gridder-list(data-griddercontent="#content1")
+                img(src="http://placehold.it/600x400")
+            li.gridder-list(data-griddercontent="#content2")
+                img(src="http://placehold.it/600x400")
+            li.gridder-list(data-griddercontent="#content3")
+                img(src="http://placehold.it/600x400")
+        <!-- Gridder content -->
+        div.gridder-content#content1(style="width:100%;") Content goes here... 
+        div.gridder-content#content2 Content goes here... 
+        div.gridder-content#content3 Content goes here... 
 
-	div(id="booths") 
-		table
-			tbody 
-				tr
-					td hello
-					td world
-					td meoww
-					td lalal
-				tr
-					td meowa
-					td ufufu
-					td ohoho
-					td sukoo
+
+block footer
+    link(href="/css/jquery.gridder.min.css" rel="stylesheet")
+    script(src="js/jquery.gridder.min.js")
+    script(src="js/arts_market.js")
