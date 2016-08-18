@@ -1,23 +1,30 @@
 extends ./templates/layout.pug
 
+mixin booth(data, num)
+    li.gridder-list(data-griddercontent="#content"+num)
+        if data.thumb
+            img.booth(src=data.thumb)
+        else
+            img.booth(src="https://placekitten.com/500/400")
+    div.gridder-content(id="content"+num)
+        div(style="background-color:yellow;")
+            p="Vendor: " + data.vendorname
+            p="Booth: " + data.boothname
+            p="Description: " + data.description
+            p="Opening Hours: " + data. openinghours
+            p="Link: " + data.link
+
+
 block content
 
     div.main(style="margin: 10% 10%;")
         <!-- Gridder navigation -->
         ul.gridder
-            li.gridder-list(data-griddercontent="#content1")
-                img(src="http://placehold.it/600x400")
-            li.gridder-list(data-griddercontent="#content2")
-                img(src="http://placehold.it/600x400")
-            li.gridder-list(data-griddercontent="#content3")
-                img(src="http://placehold.it/600x400")
-        <!-- Gridder content -->
-        div.gridder-content#content1(style="width:100%;") Content goes here... 
-        div.gridder-content#content2 Content goes here... 
-        div.gridder-content#content3 Content goes here... 
+            each val, index in data
+                +booth(val, index)
 
 
 block footer
     link(href="/css/jquery.gridder.min.css" rel="stylesheet")
     script(src="js/jquery.gridder.min.js")
-    script(src="js/arts_market.js")
+    script(src="js/gridderFunction.js")

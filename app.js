@@ -1,5 +1,6 @@
 var express = require('express');
 var workshops = require('./data/workshops');
+var arts_market = require('./data/arts_market');
 var exhibitions = require('./exhibitions');
 var app = express();
 
@@ -37,7 +38,7 @@ app.get("/calendar", function(req, res) {
 });
 
 app.get("/arts_market", function(req, res) {
-	res.render('arts_market', {title:'Arts Market', splash: "/img/headers/Market.jpg"});
+	res.render('arts_market', {title:'Arts Market', splash: "/img/headers/Market.jpg", data: arts_market});
 });
 
 app.get("/cinema", function(req, res) {
