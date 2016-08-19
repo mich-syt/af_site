@@ -1541,3 +1541,12 @@ img.support {
     object-fit:scale-down; 
     margin-right: 60px;
 }
+
+.booththumb {
+    display:inline-block;
+    float: right;
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    margin-right: 10px;
+}

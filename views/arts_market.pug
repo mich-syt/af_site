@@ -8,11 +8,19 @@ mixin booth(data, num)
             img.booth(src="https://placekitten.com/500/400")
     div.gridder-content(id="content"+num)
         div(style="background-color:yellow;")
-            p="Vendor: " + data.vendorname
-            p="Booth: " + data.boothname
-            p="Description: " + data.description
-            p="Opening Hours: " + data. openinghours
-            p="Link: " + data.link
+            div.col-sm-8#boothinfo
+                div
+                    p="Vendor: " + data.vendorname
+                    p="Booth: " + data.boothname
+                    p="Description: " + data.description
+                    p="Opening Hours: " + data. openinghours
+                    p="Link: " + data.link
+                div
+                    if data.imgs
+                        for link in data.imgs
+                            div.booththumb: img(src=link)
+            div.col-sm-4#boothimg(style="overflow:hidden")
+                img(src="https://placekitten.com/700/400")
 
 
 block content
@@ -28,3 +36,4 @@ block scripts
     link(href="/css/jquery.gridder.min.css" rel="stylesheet")
     script(src="js/jquery.gridder.min.js")
     script(src="js/gridderFunction.js")
+    script(src="js/boothThumb.js")

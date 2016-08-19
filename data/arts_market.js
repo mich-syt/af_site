@@ -4,7 +4,8 @@ var data = [
 		boothname: "Illustration Prints",
 		description: "Hello! \n Yun Jie here. I’ll be one of the artists having a booth at the Art Market :) I would be selling A5 prints of my illustrations. They are really just these happy little stick people with inspirational quotes that go with them. I gain inspiration from quotes, lyrics and some are based off my own experiences. Each illustration has a story behind them and if you would like to know more about these stories or if you are looking for cards to give your friends, do drop by at the Art Market! Hope to see you guys there :)",
 		openinghours: "Coming soon!",
-		link: "https://www.instagram.com/yj.art/"
+		link: "https://www.instagram.com/yj.art/",
+		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
 	}, 
 	{
 		vendorname: "Rotaract Club",
