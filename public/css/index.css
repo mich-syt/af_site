@@ -1218,12 +1218,13 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
     background-color: #FFFFFF;
     position: relative;
     width: 100%;
-    margin-top: 90px;
-    margin-bottom: 80px;
-    margin-left: 120px;
-    margin-right: 120px;
+    padding: 90px 120px 80px 120px;
     height:auto;
     overflow:hidden;
+}
+
+.main#about {
+    padding: 0 0;
 }
 
 .intro-header{
