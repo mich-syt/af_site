@@ -18,9 +18,9 @@ mixin booth(data, num)
                 div
                     if data.imgs
                         for link in data.imgs
-                            div.booththumb: img(src=link)
+                            div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")")
             div.col-sm-4#boothimg(style="overflow:hidden")
-                img(src="https://placekitten.com/700/400")
+                img(src=data.img[0])
 
 
 block content
