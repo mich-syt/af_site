@@ -1217,7 +1217,11 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 .main{
     background-color: #FFFFFF;
     position: relative;
-    width: 100%
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
     height:auto;
     overflow:hidden;
 }
@@ -1528,4 +1532,11 @@ Can this be done with Masonry options? */
 	text-align: center; 
 	font-size: 25px; 
 	line-height: 60px;
+}
+
+img.support {
+    max-width:400px;
+    max-height:240px;
+    object-fit:scale-down; 
+    margin-right: 60px;
 }

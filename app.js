@@ -1,7 +1,8 @@
 var express = require('express');
 var workshops = require('./data/workshops');
 var arts_market = require('./data/arts_market');
-var exhibitions = require('./exhibitions');
+var exhibitions = require('./data/exhibitions');
+var support = require('./data/support')
 var app = express();
 
 //Static folder for all assets
@@ -29,7 +30,7 @@ app.get("/contact", function(req, res) {
 });
 
 app.get("/support", function(req, res) {
-    res.render('support');
+    res.render('support', {title: 'Special Thanks', splash: "/img/headers/Credits.jpg", data: support});
 });
 
 
