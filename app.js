@@ -25,7 +25,7 @@ app.get("/venues", function(req, res) {
 });
 
 app.get("/contact", function(req, res) {
-    res.render('contact');
+    res.render('contact', {title: 'Contact Us', splash: "/img/headers/Contact.jpg"});
 });
 
 app.get("/support", function(req, res) {
