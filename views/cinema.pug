@@ -1,4 +1,26 @@
 extends ./templates/layout.pug
 
+mixin films(data, num) 
+	div#film
+		table 
+			tbody 
+				tr
+					td: img(src=data.img)
+					td: div(style="padding-left:20px;") 
+						p: b #{data.title}
+						p: i #{data.director} 
+						br 
+						p #{data.description} 
+						p: b #{data.timing} at #{data.venue}
+						p: b Rating: #{data.rating}
+						p: b Language: #{data.lnguage}
+						p: b Running Time: #{data.runningtime}
+	br
+	br
+	
 block content
-    h1 UNDER CONSTRUCTION
+	div.main 
+		div.container-fluid 
+			div.col-sm-10.col-sm-offset-1 
+				each val, index in data 
+					+films(val, index)

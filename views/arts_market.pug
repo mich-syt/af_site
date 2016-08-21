@@ -20,7 +20,7 @@ mixin booth(data, num)
                         for link in data.imgs
                             div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")")
             div.col-sm-4#boothimg(style="overflow:hidden")
-                img(src=data.img[0])
+                img(src=data.imgs[0])
 
 
 block content

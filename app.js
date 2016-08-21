@@ -2,7 +2,8 @@ var express = require('express');
 var workshops = require('./data/workshops');
 var arts_market = require('./data/arts_market');
 var exhibitions = require('./data/exhibitions');
-var support = require('./data/support')
+var support = require('./data/support');
+var cinema = require('./data/cinema');
 var performances = require('./data/performances');
 var app = express();
 
@@ -48,7 +49,7 @@ app.get("/arts_market", function(req, res) {
 });
 
 app.get("/cinema", function(req, res) {
-    res.render('cinema');
+    res.render('cinema', {title: 'Cinema', splash: "/img/headers/FilmScreening.jpg", data: cinema});
 });
 
 app.get("/exhibition/:event", function(req, res) {
