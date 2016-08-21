@@ -30,7 +30,7 @@ var data = [
 	{
 		performer: "Ashwin Venkatram", 
 		title: "Carnatic Violin Duet", 
-		description: "Ashwin will be opening with Vatapi Ganapatim, a Sanskrit song by Muthuswami Dikshitar (1775–1835), one of the "Trinity of Carnatic music" and a hymn traditionally sung at the beginning of many Carnatic music concerts, followed by English Note - a music piece that borrows attributes from both Indian Classical music as well as Western music to create a fast paced song.", 
+		description: "Ashwin will be opening with Vatapi Ganapatim, a Sanskrit song by Muthuswami Dikshitar (1775–1835), one of the \"Trinity of Carnatic music\" and a hymn traditionally sung at the beginning of many Carnatic music concerts, followed by English Note - a music piece that borrows attributes from both Indian Classical music as well as Western music to create a fast paced song.", 
 		venue: "TBC", 
 		timing: "TBC"
 	},
