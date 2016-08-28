@@ -15,7 +15,7 @@ module.exports = {
 		description: "Dating back to the AD century, silkscreening has come a long way as a printing medium still widely used today. Participants will be able to silkscreen their own shirts with various colours and designs provided. No two prints are the same, ensuring that you will have your very own, one-of-a-kind shirt to enjoy a week-long of arts fest activities in (and no one will judge you for wearing the same shirt for 5 days straight).",
 		venue: "TBC",
 		timing: "TBC",
-		fee: "7 (includes plain white shirts and print materials)",
+		fee: "10 (includes plain white shirts and print materials)",
 		size: "TBC"
 	},
 	
@@ -24,7 +24,7 @@ module.exports = {
 		splash: "/img/headers/Workshop_GNomes.jpg",
 		description: "This workshop provides a brief, hands-on experience in using microbes as a medium for artworks. Participants are guided to design (hand-drawn or digital) original patterns, then trace them onto a Petri dish using a harmless strain of E. coli in a solution. Left overnight in an incubator, the bacteria grows and the pattern takes shape on the next day, by which time they will be displayed at the workshop. Now you can art with science!",
 		venue: "Biology Learning Lab",
-		timing: "3-5pm", 
+		timing: "October 12th & 14th, 3-5pm", 
 		fee: "TBC",
 		size: 10
 	},
@@ -59,7 +59,7 @@ module.exports = {
 	"introductiontodrama": {
 		title: "Introduction to Drama",
 		splash: "/img/headers/Workshop_Drama.jpg",
-		description: "TBC", 
+		description: "If you think drama is all about acting, then you are wrong! Join us for a session, we will redefine fun/mindf*cked for you ! ;)", 
 		venue: "TBC",
 		timing: "TBC",
 		fee: "TBC",
@@ -77,7 +77,7 @@ module.exports = {
 	"hiphop": {
 		title: "Hip-hop",
 		splash: "/img/headers/Workshop_Ddz.jpg",
-		description: "Ever wanted to freestyle on the streets? ‘Anybody Can Dance’ with Dance DerivativesZ, SUTD’s very own Hip Hop dance crew, and soon you’ll be breaking it down with sick moves around school. Way to show them who really has class.", 
+		description: "Introduction to Hip Hop workshop conducted by our very own instructor Marcus Leong! Open to all those interested in trying out dance, or those who are just curious as to what hip hop entails. Or even those who just want to understand why your friends are so crazy about dance.", 
 		venue: "TBC",
 		timing: "TBC",
 		fee: "3",
@@ -103,7 +103,7 @@ module.exports = {
 	}, 
 	"waacking": {
 		title: "Waacking", 
-		splash: "http://placehold.it/1920x967", 
+		splash: "/img/headers/Workshop_Waacking.jpg", 
 		description: "Ever seen those crazy arms in Facebook videos? Or simply have a love for disco? Waack it away at Xiang Yi's Waacking Workshop!",
 		venue: "TBC", 
 		timing: "TBC",
@@ -112,11 +112,29 @@ module.exports = {
 	}, 
 	"streetjazz": {
 		title: "Street Jazz", 
-		splash:"http://placehold.it/1920x967", 
+		splash:"/img/headers/Workshop_StreetJazz.jpg", 
 		description: "Wanna get your inner diva out and get sassy? Take it away with Ben Chia's Street Jazz Workshop! ", 
 		venue: "TBC", 
 		timing: "TBC", 
 		fee: "5", 
 		size: "20-30" 
+	}, 
+	"batikpainting": {
+		title: "Batik Painting", 
+		splash: "/img/headers/Workshop_PADI.jpg", 
+		description: "TBC",
+		venue: "TBC", 
+		timing: "TBC", 
+		fee: "10", 
+		size: "TBC"
+	}, 
+	"doodling": {
+		title: "Doodling", 
+		splash: "/img/headers/Workshop_Multiverse.jpg", 
+		description: "", 
+		venue: "TBC", 
+		timing: "TBC", 
+		fee: "TBC", 
+		size: "TBC"
 	}
 }

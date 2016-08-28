@@ -41,7 +41,7 @@ app.get("/performances", function(req,res) {
 
 
 app.get("/calendar", function(req, res) {
-    res.render('calendar', {title: 'Calendar', splash: "https://placekitten.com/1920/976"});
+    res.render('calendar', {title: 'Calendar', splash: "/img/headers/officialschedule.jpg"});
 });
 
 app.get("/arts_market", function(req, res) {
