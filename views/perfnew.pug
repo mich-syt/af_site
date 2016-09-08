@@ -1,0 +1,24 @@
+extends ./templates/layout.pug 
+
+mixin perf(data)
+    div.perf-header(style="background-image: url(https://placekitten.com/500/400); height: 100px;" )
+        //img(src="https://placekitten.com/500/400" style="width:100%;")
+    div.perf-content
+        p=data.description
+        p="Venue: " + data.Venue
+        p="Date: " + data.timing
+
+block content
+    div.main
+        div#accordion
+            each val, index in data
+                +perf(val)
+block scripts
+    link(href="/css/jquery-ui.min.css" rel="stylesheet")
+    script(src="js/jquery-ui.js")
+    script.
+        $('#accordion').accordion({
+            header: "div.perf-header",
+            heightStyle: "content",
+            icons: false
+        })

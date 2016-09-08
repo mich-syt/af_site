@@ -56,6 +56,10 @@ app.get("/exhibition/:event", function(req, res) {
     res.render('exhibition', exhibitions[req.params.event]);
 });
 
+app.get("/perfnew", function(req, res) {
+    res.render('perfnew', {title: 'Performances', splash: "/img/headers/Performances.jpg", data: performances});
+})
+
 app.listen(3000, function() {
     console.log("Listening at port 3000");
 });
