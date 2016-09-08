@@ -10,12 +10,14 @@ mixin booth(data, num)
         div(style="background-color:yellow;")
             div.col-sm-8#boothinfo
                 div
-                    p="Vendor: " + data.vendorname
-                    p="Booth: " + data.boothname
-                    p="Description: " + data.description
-                    p="Venue: " + data.venue
-                    p="Opening Hours: " + data.openinghours
-                    p="Link: " + data.link
+                    h3: b #{data.boothname}
+                    h4: i #{data.vendorname}
+                    p !{data.description}
+                    if data.venue
+                        p: b @ #{data.venue}
+                    p: b !{data.openinghours}
+                    if data.link
+                        p="Link: " + data.link
                 div
                     if data.imgs
                         for link in data.imgs

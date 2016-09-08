@@ -6,7 +6,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 14th, 2-7.30pm",
 		link: "https://www.instagram.com/yj.art/",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/yunjie01.jpg", "/img/boothspage/yunjie02.jpg"]
 	}, 
 	{
 		vendorname: "Samantha Lim",
@@ -15,7 +15,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm <br>October 14th, 2-7.30pm",
 		link: "https://www.instagram.com/thesamsignature/ | https://carousell.com/thesamsignature",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/samanthalim01.jpg", "/img/boothspage/samanthalim02.jpg", "/img/boothspage/samanthalim03.jpg"]
 	}, 
 	{
 		vendorname: "SUTD Diving Club",
@@ -23,7 +23,7 @@ var data = [
 		description: "We are a group of diving enthusiasts from SUTD who dive frequently around Asia and beyond. Come by our booth for a chance to don up some diving gear and snap some photos, we will be selling dry bags too!",
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm <br>October 14th, 2-7.30pm",
-		link: "https://www.facebook.com/groups/SUTDdiving",
+		link: "https://www.facebook.com/groups/SUTDdiving,jpg",
 		imgs: ["/img/boothspage/divingclub.jpg"]
 	}, 
 	{
@@ -33,7 +33,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "https://www.facebook.com/groups/sutdphotogcircle",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/photogcircle.jpg"]
 	}, 
 	{
 		vendorname: "SUTD Drama Society",
@@ -60,7 +60,7 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 12th, 7-10pm",
 		link: "",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/rotaract01.jpg"]
 		
 	}, 
 	{
@@ -70,7 +70,7 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 10th, 6-8pm",
 		link: "",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/henna.jpg"]
 
 	}, 
 	{
@@ -80,7 +80,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-8pm",
 		link: "https://www.instagram.com/teewhywhy/",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/yiyang01.jpg","/img/boothspage/yiyang02.jpg","/img/boothspage/yiyang03.jpg"]
 
 	}, 
 	{
@@ -100,7 +100,7 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 12th, 7-10pm <br>October14th, 2-7.30pm",
 		link: "",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/vocomotives01.jpg", "/img/boothspage/vocomotives02.jpg", "/img/boothspage/vocomotives03.jpg"]
 	}, 
 	{
 		vendorname: "Yun En",
@@ -109,7 +109,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "https://www.instagram.com/yunennn",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/yunen01.jpg", "/img/boothspage/yunen02.jpg", "/img/boothspage/yunen03.jpg"]
 
 	}, 
 	{
@@ -119,7 +119,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm",
 		link: "",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/zann01.jpg", "/img/boothspage/zann02.jpg", "/img/boothspage/zann03.jpg"]
 
 	}, 
 	{
@@ -128,7 +128,7 @@ var data = [
 		description: "<strong>Handpainted Leather Bags</strong><br>'Fashions fade, style is eternal.' —Yves Saint Laurent <br>Art and Design for the Fashionably Bold: started by Nabila, NLPDesigns is a Singapore-based store specializing in handpainted customised leather bags. Immortalise your style in our very own custom leather bags, personally handpainted and designed only for you.",
 		openinghours: "Coming soon!",
 		link: "https://www.instagram.com/nlpdesigns | https://www.facebook.com/NLPDesigns",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/nabila01.jpg", "/img/boothspage/nabila02.jpg", "/img/boothspage/nabila03.jpg"]
 
 	}, 	
 	{
@@ -138,7 +138,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm", 
 		link: "https://www.instagram.com/multiversemag | https://www.facebook.com/multiversemag",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/multiverse01.jpg", "/img/boothspage/multiverse02.jpg", "/img/boothspage/multiverse03.jpg"]
 
 	}, 
 	{
@@ -148,7 +148,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm <br>October 14th, 2-7.30pm", 
 		link: "https://www.instagram.com/im_possibilities | https://www.facebook.com/SUTDArtsFest",
-		imgs: ["https://placekitten.com/500/400", "https://placekitten.com/500/400", "https://placekitten.com/500/400"]
+		imgs: ["/img/boothspage/pillar+01.jpg", "/img/boothspage/pillar+02.jpg", "/img/boothspage/pillar+03.jpg"]
 
 	}
 
