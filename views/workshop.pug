@@ -11,8 +11,11 @@ block content
                 br 
                 div#details
                     h4#timing-and-venue: b #{timing} at #{venue}
+                    if timing2 
+                        h4#timing2-and-venue2: b #{timing2} at #{venue2}
                     h4#fee: b Workshop fee: $#{fee}
-                    h4#size: b Limited slots available to first #{size} participants
+                    if size
+                        h4#size: b Limited slots available to first #{size} participants
                 br 
                 br
                 br

@@ -3,8 +3,10 @@ module.exports = {
         title: "Crocheting",
         splash: "/img/headers/Workshop_Crocheting.jpg",
 		description: "Crocheting is a wonderful way of relieving stress, while its versatility allows for it to be done whenever and wherever. Learn how to knit something nifty while waiting for the bus! This workshop will not only teach the basics of the trade for all starting members, but participants will also be engaged in a two-session project where you will be able to make your own mobile phone pouch. After all, practice makes good patterns.",
-		venue: "TBC", 
-		timing: "TBC", 
+		venue: "Think Tank TBC", 
+		timing: "October 10th, 7.30-10pm", 
+		venue2: "Think Tank TBC", 
+		timing2: "October 14th, 2.30-5pm",
 		fee: "7 (includes materials and instructions)", 
 		size: 20 
     },
@@ -13,10 +15,9 @@ module.exports = {
 		title: "Silkscreening",
 		splash: "/img/headers/Workshop_SUTDio.jpg",
 		description: "Dating back to the AD century, silkscreening has come a long way as a printing medium still widely used today. Participants will be able to silkscreen their own shirts with various colours and designs provided. No two prints are the same, ensuring that you will have your very own, one-of-a-kind shirt to enjoy a week-long of arts fest activities in (and no one will judge you for wearing the same shirt for 5 days straight).",
-		venue: "TBC",
-		timing: "TBC",
-		fee: "10 (includes plain white shirts and print materials)",
-		size: "TBC"
+		venue: "Campus Center",
+		timing: "October 10th & 12th, 7-10pm",
+		fee: "10 (includes plain white shirts and print materials)"
 	},
 	
 	"bacteriapainting": {
@@ -33,8 +34,8 @@ module.exports = {
 		title: "Spoken Word and Poetry",
 		splash: "/img/headers/Workshop_SpokenWord.jpg",
 		description: "Spoken Word is a performance incorporating poetry, comedy and drama all in one. Many people scoff at poetry from being too confounding, comedy for being too much of a joke, drama for being plain dramatic. Spoken word is none of those. In fact, almost everyone has done it. Join us for the Spoken Word Poetry Workshop and attain the key to unleashing your spoken word.", 
-		venue: "TBC",
-		timing: "TBC",
+		venue: "Think Tank TBC",
+		timing: "October 14th, 1.30-3pm",
 		fee: "2",
 		size: 20
 	},
@@ -51,8 +52,8 @@ module.exports = {
 		title: "Rangoli Art",
 		splash: "/img/headers/Workshop_NamasteRangoli.jpg",
 		description: "Rangoli is an art form from India in which patterns are created on the floor in living rooms or courtyards using materials such as colored rice, dry flour, colored sand or flower petals. While mainly used as a form of decor, it is also thought to bring good luck with the use of auspicious symbols central to the design. It’s a great way to decorate your cohort classes, especially right before exams. \n(Disclaimer: does not guarantee winning cleanest class award.)", 
-		venue: "TBC",
-		timing: "TBC",
+		venue: "Campus Center",
+		timing: "October 13th, 5-7pm",
 		fee: "5 (includes Rangoli powder)",
 		size: 10
 	},	
