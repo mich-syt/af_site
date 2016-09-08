@@ -1,7 +1,35 @@
 extends ./templates/layout.pug 
 
+mixin booth(data, num)
+    li.gridder-list(data-griddercontent="#content"+num)
+        if data.thumb
+            img.booth(src=data.thumb)
+        else
+            img.booth(src="https://placekitten.com/500/400")
+    div.gridder-content(id="content"+num)
+        div(style="background-color:yellow;")
+            div.col-sm-8#boothinfo
+                div
+                    p="Performer: " + data.performer
+                    p="Title: " + data.title
+                    p="Description: " + data.description
+                    p="Venue: " + data.venue
+                    p="Date: " + data.timing
+                div
+                    if data.imgs
+                        for link in data.imgs
+                            div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")")
+            div.col-sm-4#boothimg(style="overflow:hidden")
+                img(src=data.imgs[0])
+
+
 block content
+
     div.main
+        <!-- Gridder navigation -->
+        ul.gridder
+            each val, index in data
+                +booth(val, index)
 
 
 block scripts
