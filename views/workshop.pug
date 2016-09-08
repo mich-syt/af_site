@@ -10,10 +10,14 @@ block content
                     h4 #{description}
                 br 
                 div#details
-                    h4#timing-and-venue: b #{timing} at #{venue}
+                    if timing!="TBC" 
+                        h4#timing-and-venue: b #{timing} at #{venue}
+                    else 
+                        h4#coming-soon: b More details coming soon! 
                     if timing2 
                         h4#timing2-and-venue2: b #{timing2} at #{venue2}
-                    h4#fee: b Workshop fee: $#{fee}
+                    if fee 
+                        h4#fee: b Workshop fee: $#{fee}
                     if size
                         h4#size: b Limited slots available to first #{size} participants
                 br 

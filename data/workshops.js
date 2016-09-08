@@ -43,8 +43,8 @@ module.exports = {
 		title: "Henna Painting",
 		splash: "/img/headers/Workshop_NamasteHenna.jpg",
 		description: "Ever wanted to get an awesome tattoo that doesn’t stay on your skin for the rest of your life? Or the chance to draw on your friends without them throwing looks of disdain in your direction? Henna painting has been a long-practiced form of body art, famous for its intricate and beautiful patterns. Come by the workshop to try your hand(s) at henna painting!", 
-		venue: "TBC",
-		timing: "TBC",
+		venue: "Think Tank TBC",
+		timing: "October 11th, 5.30-7.30pm",
 		fee: "5 (includes papers and henna cone)",
 		size: 30
 	},
@@ -62,17 +62,14 @@ module.exports = {
 		splash: "/img/headers/Workshop_Drama.jpg",
 		description: "If you think drama is all about acting, then you are wrong! Join us for a session, we will redefine fun/mindf*cked for you ! ;)", 
 		venue: "TBC",
-		timing: "TBC",
-		fee: "TBC",
-		size: "TBC"
+		timing: "TBC"
 	},
 	"bollywoodjazz": {
 		title: "Bollywood Jazz",
 		splash: "/img/headers/Workshop_Taal.jpg",
 		description: "Coming a long way from dances around coconut trees, Bollywood Jazz emerged as a result of the diverse and ever-changing trends in the Indian dance industry. Kick off your shoes for a fast-paced fusion of Indian music and contemporary Western dance, and shimmy the stress away.", 
-		venue: "TBC",
-		timing: "TBC",
-		fee: "TBC",
+		venue: "Dance Studio TBC",
+		timing: "October 13th, 7.30-9.30pm",
 		size: 20
 	},
 	"hiphop": {
@@ -81,15 +78,14 @@ module.exports = {
 		description: "Introduction to Hip Hop workshop conducted by our very own instructor Marcus Leong! Open to all those interested in trying out dance, or those who are just curious as to what hip hop entails. Or even those who just want to understand why your friends are so crazy about dance.", 
 		venue: "TBC",
 		timing: "TBC",
-		fee: "3",
-		size: "TBC"
+		fee: "3"
 	},	
 	"introductiontocontemporarydance": {
 		title: "Introduction to Contemporary Dance",
 		splash: "/img/headers/Workshop_Fluence.jpg",
 		description: "Inspired by classical ballet and modern dance techniques, contemporary dance has become one of the most practiced genres of dance today. This workshop covers basic techniques such as floor work and body awareness, while introducing participants to the practice of creative physical expression.", 
-		venue: "TBC",
-		timing: "TBC",
+		venue: "Campus Center",
+		timing: "October 11th, 5.40-7pm",
 		fee: "5",
 		size: 20
 	},	
@@ -99,8 +95,7 @@ module.exports = {
 		description: "The Funkstyle community in Singapore has grown into a vibrant scene, with names such as Lion City Lockers alongside various Funkstyle dance clubs from NUS, NTU and other universities. Funkstyle Workshop by our very own Dance Funktion dF(x) crew will show you how to pop it and lock it - like you really mean it.", 
 		venue: "TBC",
 		timing: "TBC",
-		fee: "5",
-		size: "TBC"
+		fee: "5"
 	}, 
 	"waacking": {
 		title: "Waacking", 
@@ -123,19 +118,16 @@ module.exports = {
 	"batikpainting": {
 		title: "Batik Painting", 
 		splash: "/img/headers/Workshop_PADI.jpg", 
-		description: "TBC",
+		description: "",
 		venue: "TBC", 
 		timing: "TBC", 
-		fee: "10", 
-		size: "TBC"
+		fee: "10"
 	}, 
 	"doodling": {
 		title: "Doodling", 
 		splash: "/img/headers/Workshop_Multiverse.jpg", 
 		description: "", 
 		venue: "TBC", 
-		timing: "TBC", 
-		fee: "TBC", 
-		size: "TBC"
+		timing: "TBC"
 	}
 }
