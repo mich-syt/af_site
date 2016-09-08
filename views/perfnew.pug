@@ -1,7 +1,9 @@
 extends ./templates/layout.pug 
 
 mixin perf(data)
-    div.perf-header(style="background-image: url(https://placekitten.com/500/400); height: 100px;" )
+    div.perf-header(style="background-image: url(https://placekitten.com/500/400); background-repeat: no-repeat; background-size: 50% auto; height: 100px;" )
+        h3(style="text-align:right") #{data.title}
+        p(style="text-align:right") #{data.performer}
         //img(src="https://placekitten.com/500/400" style="width:100%;")
     div.perf-content
         p=data.description
