@@ -6,9 +6,18 @@ mixin perf(data)
         p(style="text-align:right") #{data.performer}
         //img(src="https://placekitten.com/500/400" style="width:100%;")
     div.perf-content
-        p=data.description
-        p="Venue: " + data.Venue
-        p="Date: " + data.timing
+        div(style="background-color:yellow;")
+            div.col-sm-8#boothinfo
+                div
+                    p !{data.description}
+                    p="Venue: " + data.Venue
+                    p="Date: " + data.timing
+                div
+                    if data.imgs
+                        for link in data.imgs
+                            div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")")
+            div.col-sm-4#boothimg(style="overflow:hidden")
+                img(src=data.imgs[0])        
 
 block content
     div.main
@@ -24,3 +33,7 @@ block scripts
             heightStyle: "content",
             icons: false
         })
+
+        function changeToBigImg(link) {
+            $('.gridder-expanded-content > div > #boothimg > img').attr("src", link);
+        }
