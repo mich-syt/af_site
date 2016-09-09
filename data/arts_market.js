@@ -6,7 +6,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 14th, 2-7.30pm",
 		link: "https://www.instagram.com/yj.art/",
-		imgs: ["/img/boothspage/yunjie01.jpg", "/img/boothspage/yunjie02.jpg"]
+		imgs: ["/img/boothspage/yunjie01.jpg", "/img/boothspage/yunjie02.jpg"], 
+		header: "/img/boothheaders/yunjie.jpg"
 	}, 
 	{
 		vendorname: "Samantha Lim",
@@ -15,7 +16,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm <br>October 14th, 2-7.30pm",
 		link: "https://www.instagram.com/thesamsignature/ | https://carousell.com/thesamsignature",
-		imgs: ["/img/boothspage/samanthalim01.jpg", "/img/boothspage/samanthalim02.jpg", "/img/boothspage/samanthalim03.jpg"]
+		imgs: ["/img/boothspage/samanthalim01.png", "/img/boothspage/samanthalim02.png", "/img/boothspage/samanthalim03.png"], 
+		header: "/img/boothheaders/samanthalim.jpg"
 	}, 
 	{
 		vendorname: "SUTD Diving Club",
@@ -24,7 +26,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm <br>October 14th, 2-7.30pm",
 		link: "https://www.facebook.com/groups/SUTDdiving,jpg",
-		imgs: ["/img/boothspage/divingclub.jpg"]
+		imgs: ["/img/boothspage/divingclub.jpg"], 
+		header: "/img/boothheaders/diving.jpg"
 	}, 
 	{
 		vendorname: "SUTD Photography Circle",
@@ -33,7 +36,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "https://www.facebook.com/groups/sutdphotogcircle",
-		imgs: ["/img/boothspage/photogcircle.png"]
+		imgs: ["/img/boothspage/photogcircle.png"], 
+		header: "/img/boothheaders/photogcircle.jpg"
 	}, 
 	{
 		vendorname: "SUTD Drama Society",
@@ -42,7 +46,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "",
-		imgs: ["/img/boothspage/dramasociety.jpeg"]
+		imgs: ["/img/boothspage/dramasociety.jpeg"], 
+		header: "/img/boothheaders/drama.jpg"
 	}, 
 	{
 		vendorname: "SUTD E-Sports",
@@ -51,7 +56,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "https://www.facebook.com/Sutd.ESports/",
-		imgs: ["/img/boothspage/ESports.png"]
+		imgs: ["/img/boothspage/ESports.png"], 
+		header: "/img/boothheaders/esports.jpg"
 	}, 
 	{
 		vendorname: "Rotaract Club",
@@ -60,7 +66,8 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 12th, 7-10pm",
 		link: "",
-		imgs: ["/img/boothspage/rotaract01.jpg"]
+		imgs: ["/img/boothspage/rotaract01.jpg"], 
+		header: "/img/boothheaders/rotaract.jpg"
 		
 	}, 
 	{
@@ -70,7 +77,8 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 10th, 6-8pm",
 		link: "",
-		imgs: ["/img/boothspage/henna.jpg"]
+		imgs: ["/img/boothspage/henna.jpg"], 
+		header: "/img/boothheaders/henna.jpg"
 
 	}, 
 	{
@@ -80,7 +88,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-8pm",
 		link: "https://www.instagram.com/teewhywhy/",
-		imgs: ["/img/boothspage/yiyang01.jpg","/img/boothspage/yiyang02.jpg","/img/boothspage/yiyang03.jpg"]
+		imgs: ["/img/boothspage/yiyang01.jpg","/img/boothspage/yiyang02.jpg","/img/boothspage/yiyang03.jpg"], 
+		header: "/img/boothheaders/yiyang.jpg"
 
 	}, 
 	{
@@ -90,7 +99,8 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 12th, 7-10pm <br>October 14th, 2-7.30pm",
 		link: "",
-		imgs: ["/img/boothspage/frenchclub01.jpg", "/img/boothspage/frenchclub02.jpg", "/img/boothspage/frenchclub03.jpg"]
+		imgs: ["/img/boothspage/frenchclub01.jpg", "/img/boothspage/frenchclub02.jpg", "/img/boothspage/frenchclub03.jpg"], 
+		header: "/img/boothheaders/frenchclub.jpg"
 
 	}, 
 	{
@@ -100,7 +110,8 @@ var data = [
 		venue: "Campus Center",		
 		openinghours: "October 12th, 7-10pm <br>October14th, 2-7.30pm",
 		link: "",
-		imgs: ["/img/boothspage/vocomotives01.jpg", "/img/boothspage/vocomotives02.jpg", "/img/boothspage/vocomotives03.jpg"]
+		imgs: ["/img/boothspage/vocomotives01.jpg", "/img/boothspage/vocomotives02.jpg", "/img/boothspage/vocomotives03.jpg"], 
+		header: "/img/boothheaders/vocomotives.jpg"
 	}, 
 	{
 		vendorname: "Yun En",
@@ -109,7 +120,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "https://www.instagram.com/yunennn",
-		imgs: ["/img/boothspage/yunen01.jpg", "/img/boothspage/yunen02.jpg", "/img/boothspage/yunen03.jpg"]
+		imgs: ["/img/boothspage/yunen01.jpg", "/img/boothspage/yunen02.jpg", "/img/boothspage/yunen03.jpg"], 
+		header: "/img/boothheaders/yunen.jpg"
 
 	}, 
 	{
@@ -119,7 +131,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm",
 		link: "",
-		imgs: ["/img/boothspage/zann01.jpg", "/img/boothspage/zann02.jpg", "/img/boothspage/zann03.jpg"]
+		imgs: ["/img/boothspage/zann01.jpg", "/img/boothspage/zann02.jpg", "/img/boothspage/zann03.jpg"], 
+		header: "/img/boothheaders/zann.jpg"
 
 	}, 
 	{
@@ -128,7 +141,8 @@ var data = [
 		description: "<strong>Handpainted Leather Bags</strong><br>'Fashions fade, style is eternal.' —Yves Saint Laurent <br>Art and Design for the Fashionably Bold: started by Nabila, NLPDesigns is a Singapore-based store specializing in handpainted customised leather bags. Immortalise your style in our very own custom leather bags, personally handpainted and designed only for you.",
 		openinghours: "Coming soon!",
 		link: "https://www.instagram.com/nlpdesigns | https://www.facebook.com/NLPDesigns",
-		imgs: ["/img/boothspage/nabila01.jpg", "/img/boothspage/nabila02.jpg", "/img/boothspage/nabila03.jpg"]
+		imgs: ["/img/boothspage/nabila01.jpg", "/img/boothspage/nabila02.jpg", "/img/boothspage/nabila03.jpg"], 
+		header: "/img/boothheaders/nabila.jpg"
 
 	}, 	
 	{
@@ -138,7 +152,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm", 
 		link: "https://www.instagram.com/multiversemag | https://www.facebook.com/multiversemag",
-		imgs: ["/img/boothspage/multiverse01.jpg", "/img/boothspage/multiverse02.jpg", "/img/boothspage/multiverse03.jpg"]
+		imgs: ["/img/boothspage/multiverse01.jpg", "/img/boothspage/multiverse02.png", "/img/boothspage/multiverse03.png"], 
+		header: "/img/boothheaders/multiverse.jpg"
 
 	}, 
 	{
@@ -148,7 +163,8 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm <br>October 14th, 2-7.30pm", 
 		link: "https://www.instagram.com/im_possibilities | https://www.facebook.com/SUTDArtsFest",
-		imgs: ["/img/boothspage/pillar+01.jpg", "/img/boothspage/pillar+02.jpg", "/img/boothspage/pillar+03.jpg"]
+		imgs: ["/img/boothspage/pillar+01.jpg", "/img/boothspage/pillar+02.jpg", "/img/boothspage/pillar+03.jpg"], 
+		header: "/img/boothheaders/pillar+.jpg"
 
 	}
 
