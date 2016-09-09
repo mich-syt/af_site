@@ -11,8 +11,8 @@ mixin perf(data)
                 div.col-md-12
                     p !{data.description}
                     if data.venue 
-                        p Venue:  + #{data.venue}
-                    p Date: + #{data.timing}
+                        p Venue: #{data.venue}
+                    p Date: #{data.timing}
                 div.col-md-12(style="height:100px; margin: 10px 0px;")
                     if data.imgs
                         for link in data.imgs

@@ -1,15 +1,20 @@
 extends ./templates/layout.pug
 
-mixin booth(data, num)
-    li.gridder-list(data-griddercontent="#content"+num)
-        if data.thumb
-            img.booth(src=data.thumb)
-        else
-            img.booth(src="https://placekitten.com/500/400")
-    div.gridder-content(id="content"+num)
-        div(style="background-color:yellow;")
-            div.col-sm-8#boothinfo
-                div
+mixin booth(data)
+    if data.header
+        div.booth-header(style="background-image: url("+data.header+"); background-repeat: no-repeat; background-size: 50% auto; height: 100px;" )
+            h3(style="text-align:right") #{data.boothname}
+            p(style="text-align:right") #{data.vendorname}
+    else
+        div.booth-header(style="background-image: url(https://placekitten.com/500/400); background-repeat: no-repeat; background-size: 50% auto; height: 100px;" )
+            h3(style="text-align:right") #{data.boothname}
+            p(style="text-align:right") #{data.vendorname}       
+
+        //img(src="https://placekitten.com/500/400" style="width:100%;")
+    div.booth-content
+        div.container-fluid(style="background-color:yellow;")
+            div.col-md-8#boothinfo
+                div.col-md-12
                     h3: b #{data.boothname}
                     h4: i #{data.vendorname}
                     p !{data.description}
@@ -18,25 +23,30 @@ mixin booth(data, num)
                     p: b !{data.openinghours}
                     if data.link
                         p Link: #{data.link}
-                div
+                div.col-md-12(style="height:100px; margin: 10px 0px;")
                     if data.imgs
                         for link in data.imgs
-                            div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")")
-            div.col-sm-4#boothimg(style="overflow:hidden")
-                img(src=data.imgs[0])
-
+                            div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")" )
+            div.col-md-4#boothimg(style="overflow:hidden;")
+                img(src=data.imgs[0] style="width:100%")  
 
 block content
-
     div.main
-        <!-- Gridder navigation -->
-        ul.gridder
+        div#accordion
             each val, index in data
-                +booth(val, index)
+                +booth(val)
 
 
 block scripts
-    link(href="/css/jquery.gridder.min.css" rel="stylesheet")
-    script(src="js/jquery.gridder.min.js")
-    script(src="js/gridderFunction.js")
-    script(src="js/boothThumb.js")
+    link(href="/css/jquery-ui.min.css" rel="stylesheet")
+    script(src="js/jquery-ui.js")
+    script.
+        $('#accordion').accordion({
+            header: "div.booth-header",
+            heightStyle: "content",
+            icons: false
+        })
+
+        function changeToBigImg(link) {
+            $('.ui-accordion-content-active > div > #boothimg > img').attr("src", link);
+        }

@@ -1549,4 +1549,6 @@ img.support {
     height:100px;
     overflow:hidden;
     margin-right: 10px;
+    border: 1px solid lightgrey;
 }
+
