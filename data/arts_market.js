@@ -33,7 +33,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "https://www.facebook.com/groups/sutdphotogcircle",
-		imgs: ["/img/boothspage/photogcircle.jpg"]
+		imgs: ["/img/boothspage/photogcircle.png"]
 	}, 
 	{
 		vendorname: "SUTD Drama Society",
@@ -42,7 +42,7 @@ var data = [
 		venue: "Campus Center",
 		openinghours: "October 10th, 6-10pm <br>October 12th, 7-10pm",
 		link: "",
-		imgs: ["/img/boothspage/dramasociety.jpg"]
+		imgs: ["/img/boothspage/dramasociety.jpeg"]
 	}, 
 	{
 		vendorname: "SUTD E-Sports",

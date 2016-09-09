@@ -1,7 +1,7 @@
 extends ./templates/layout.pug 
 
 mixin perf(data)
-    div.perf-header(style="background-image: url(https://placekitten.com/500/400); background-repeat: no-repeat; background-size: 50% auto; height: 100px;" )
+    div.perf-header(style="background-image: url("+data.header+"); background-repeat: no-repeat; background-size: 50% auto; height: 100px;" )
         h3(style="text-align:right") #{data.title}
         p(style="text-align:right") #{data.performer}
         //img(src="https://placekitten.com/500/400" style="width:100%;")
@@ -10,8 +10,9 @@ mixin perf(data)
             div.col-md-8#boothinfo
                 div.col-md-12
                     p !{data.description}
-                    p="Venue: " + data.Venue
-                    p="Date: " + data.timing
+                    if data.venue 
+                        p Venue:  + #{data.venue}
+                    p Date: + #{data.timing}
                 div.col-md-12(style="height:100px; margin: 10px 0px;")
                     if data.imgs
                         for link in data.imgs

@@ -17,7 +17,7 @@ mixin booth(data, num)
                         p: b @ #{data.venue}
                     p: b !{data.openinghours}
                     if data.link
-                        p="Link: " + data.link
+                        p Link: #{data.link}
                 div
                     if data.imgs
                         for link in data.imgs
