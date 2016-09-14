@@ -65,7 +65,7 @@ var data = [
 	{
 		performer: "Dance Funktion dF(x)", 
 		title: "Funkstyle Performance", 
-		description: "Coming soon!", 
+		description: "With moves like popping and locking in their arsenal, Dance Funktion dF(x) is bringing the groove from the streets into the school compound - to break it down along the x.", 
 		venue: "Campus Center", 
 		timing: "Opening Night, 10th October, 7pm", 
 		imgs: [], 
@@ -127,7 +127,7 @@ var data = [
 		title: "Production by Drama Society", 
 		description: "Coming soon!", 
 		venue: "Campus Center", 
-		timing: "14th October 5.30pm", 
+		timing: "12th October, 6.30-7pm <br> 12th October, 7-7.30pm", 
 		imgs: ["/img/performers/dramatemporary.jpg"], 
 		header: "/img/performanceheaders/drama.jpg"
 	}
