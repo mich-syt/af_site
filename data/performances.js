@@ -90,15 +90,6 @@ var data = [
 		header: "/img/performanceheaders/vocomotives.jpg"
 	},	
 	{
-		performer: "Indonesian Cultural Club", 
-		title: "Saman Dance", 
-		description: "Also called ‘the dance of thousand hands’, the Saman dance is one of the most practiced among Indonesian traditional dances. Characterized by its fast-paced rhythm and common harmony between dancers, these two elements are key figures of Saman, along with its notable disuse of music instruments. Audience members are invited to clap along to the dance, joining the performance from the crowd.", 
-		venue: "Jackie Chan Pavilion", 
-		timing: "12th October, 7pm", 
-		imgs: ["/img/performers/indoclub01.jpg", "/img/performers/indoclub02.jpg", "/img/performers/indoclub03.jpg"], 
-		header: "/img/performanceheaders/indo.jpg"
-	},	
-	{
 		performer: "Michael Sebastian", 
 		title: "Magic Show", 
 		description: "Michael has been practicing magic since a very young age. Born and raised in Indonesia, where magicians were often as popular as actors and musicians, he was exposed to magic early and learned his first trick from his uncle. He was captivated by its power to challenge reason, perception, and reality. Now, he continues to practice magic as a hobby to remind himself to always have the correct perspective and to live out his life motto: \"Nothing is impossible.\"", 

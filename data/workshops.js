@@ -100,7 +100,7 @@ module.exports = {
 	}, 
 	"saman": {
 		title: "Saman Dance", 
-		splash: "/img/headers/Woekshop_PADI.jpg",
+		splash: "/img/headers/Workshop_Saman.jpg",
 		description: "Also called ‘the dance of thousand hands’, the Saman dance is one of the most practiced among Indonesian traditional dances. Characterized by its fast-paced rhythm and common harmony between dancers, these two elements are key figures of Saman, along with its notable disuse of music instruments. Audience members are invited to clap along to the dance, joining the performance from the crowd.", 
 		venue: "Space Bar", 
 		timing: "14th October, 3.30-5.30pm", 
