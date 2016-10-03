@@ -2,7 +2,7 @@ extends ./templates/layout.pug
 
 mixin booth(data)
     if data.header
-        div.booth-header(style="background-image: url("+data.header+"); background-repeat: no-repeat; background-size: 50% auto; height: 100px;" )
+        div.booth-header(style="background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0%, rgba(255,255,255,255) 80%), url("+data.header+"); background-repeat: no-repeat; background-size: auto 100%; height: 100px;" )
             h3(style="text-align:right") #{data.boothname}
             p(style="text-align:right") #{data.vendorname}
     else
@@ -23,7 +23,7 @@ mixin booth(data)
                     p: b !{data.openinghours}
                     if data.link
                         p Link: #{data.link}
-                div.col-md-12(style="height:100px; margin: 10px 0px;")
+                div.col-md-12.booth-thumbs(style="height:100px; margin: 10px 0px;")
                     if data.imgs
                         for link in data.imgs
                             div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")" )
@@ -38,12 +38,13 @@ block content
 
 
 block scripts
-    link(href="/css/jquery-ui.min.css" rel="stylesheet")
+    link(href="/css/jquery-ui.css" rel="stylesheet")
     script(src="js/jquery-ui.js")
     script.
         $('#accordion').accordion({
             header: "div.booth-header",
             heightStyle: "content",
+            collapsible: true,
             icons: false
         })
 
