@@ -8,21 +8,10 @@ block content
         div.content
             div#Sponsors(style="margin-bottom: 60px;")
                 div.col-xs-12
-                    h3 Sponsored By
+                    h3 Supported By
             div#SponsorsLogo(style="margin-bottom: 90px;")
                 each link in data.sponsors
                     +logo(link)
-            div#Donors(style="margin-bottom: 60px;")
-                div.col-xs-12
-                    h3 Donors
-            div#DonorsLogo(style="margin-bottom: 90px;")
-                each link in data.donors
-                    +logo(link)
-            div#Media(style="margin-bottom: 60px;")
-                div.col-xs-12
-                    h3 Media Coverage and Support
-            div#MediaLogo(style="margin-bottom: 90px;")
-                each link in data.media
-                    +logo(link)
+
         div
             div: a#backbutton(href="/") < Back to Main Menu
