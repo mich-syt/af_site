@@ -1,9 +1,6 @@
 searchVisible = 0;
 
 $(document).ready(function(){
-    /*      Activate the switches with icons      */
-    $('.switch')['bootstrapSwitch']();
-      
     /*      Activate regular switches        */
     $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
     

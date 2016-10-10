@@ -7,9 +7,6 @@ $(window).on('load', function () {
 
 	var gutter = parseInt($('.post').css('marginBottom'));
 	var container = $('div#posts');
-	console.log(container);
-
-
 
 	// Creates an instance of Masonry on #posts
 

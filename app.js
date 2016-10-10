@@ -1,19 +1,22 @@
 var express = require('express');
+var favicon = require('serve-favicon');
+var path = require('path');
+
 var workshops = require('./data/workshops');
 var arts_market = require('./data/arts_market');
 var exhibitions = require('./data/exhibitions');
 var support = require('./data/support');
 var cinema = require('./data/cinema');
 var performances = require('./data/performances');
+
 var app = express();
 
+//Set favicon icon path
+app.use(favicon(path.join(__dirname, 'public', 'img', 'favicons', 'favi.ico')));
 //Static folder for all assets
 app.use(express.static('public'));
+//Set view engine
 app.set('view engine', 'pug'); 
-
-app.get('/jquery/jquery.js', function(req, res) {
-    res.sendFile(__dirname + '/node_modules/jquery/dist/jquery.min.js');
-});
 
 app.get('/', function (req, res) {
     res.render('index.pug', {title:'Arts Fest 2016', "splash": {"base": "img/headers/headergif.gif", "cover": "img/cover_4_blur.jpg"}});
@@ -38,7 +41,6 @@ app.get("/support", function(req, res) {
 app.get("/performances", function(req,res) {
 	res.render('performances', {title: 'Performances', splash: "/img/headers/Performances.jpg", data: performances}); 
 });
-
 
 app.get("/calendar", function(req, res) {
     res.render('calendar', {title: 'Calendar', splash: "/img/headers/officialschedule.jpg"});
