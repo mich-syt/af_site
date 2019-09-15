@@ -1,0 +1,44 @@
+// Navbar
+
+div#navbar-full
+    div#navbar
+        nav.navbar.navbar-ct-black.navbar-transparent.navbar-fixed-top(role="navigation")
+            div.container-fluid
+                div.navbar-header
+                    button.navbar-toggle(type="button"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="/") AF16
+
+                // Collect the nav links, forms, and other content for toggling
+                div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+                    ul.nav.navbar-nav
+                        li.dropdown
+                            a.dropdown-toggle(href="#" data-toggle="dropdown" role="button") Menu
+                                span.caret
+                            ul.dropdown-menu
+                                li: a(href="/#about") About
+                                li: a(href="/calendar") Festival Schedule
+                                li: a(href="/venues") Venues
+                                li.divider(role="separator")
+                                li: a(href="/#workshops") Workshops
+                                li: a(href="/performances") Performances 
+                                li: a(href="/#exhibition") Exhibition 
+                                li: a(href="/cinema") Film Screening 
+                                li: a(href="/arts_market") Arts Market 
+                                li: a(href="https://www.facebook.com/SUTDArtsFest/shop/") Shop
+                                li.divider(role="separator")
+                                li: a(href="contact") Contact
+                                li: a(href="support") Supporters 
+                                
+						
+
+                    ul.nav.navbar-nav.navbar-right
+                        li: button.btn: a(href="https://www.facebook.com/SUTDArtsFest/"): img(src="/img/icon_fb.png" width="36px" height="36px")
+                        li: button.btn: a(href="https://www.instagram.com/im_possibilities/"): img(src="/img/icon_insta.png" width="36px" height="36px") 
+                        li: button.btn: a(href="https://www.facebook.com/SUTDArtsFest/shop/"): img(src="/img/icon_cart.png" width="36px" height="36px") 
+script(src="/js/navBarTransparency.js")
+
+        

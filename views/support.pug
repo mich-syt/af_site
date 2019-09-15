@@ -1,0 +1,17 @@
+extends ./templates/layout.pug
+mixin logo(link)
+    span(style="overflow:hidden;")
+        img.support(src=link)
+
+block content
+    div.main
+        div.content
+            div#Sponsors(style="margin-bottom: 60px;")
+                div.col-xs-12
+                    h3 Supported By
+            div#SponsorsLogo(style="margin-bottom: 90px;")
+                each link in data.sponsors
+                    +logo(link)
+
+        div
+            div: a#backbutton(href="/") < Back to Main Menu

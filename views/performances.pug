@@ -1,0 +1,41 @@
+extends ./templates/layout.pug 
+
+mixin perf(data)
+    div.perf-header(style="background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 0%, rgba(255,255,255,255) 80%), url("+data.header+"); background-repeat: no-repeat; background-size: auto 100%; height: 100px;" )
+        h3(style="text-align:right") #{data.title}
+        p(style="text-align:right") #{data.performer}
+        //img(src="https://placekitten.com/500/400" style="width:100%;")
+    div.perf-content
+        div.container-fluid
+            div.col-md-8#boothinfo
+                div.col-md-12
+                    p !{data.description}
+                    if data.venue 
+                        p: h4: b @ #{data.venue}
+                    p: h4: i !{data.timing}
+                div.col-md-12.booth-thumbs(style="height:100px; margin: 10px 0px;")
+                    if data.imgs
+                        for link in data.imgs
+                            div.booththumb: img(src=link onClick="changeToBigImg(\" " + link + " \")")
+            div.col-md-4#boothimg(style="overflow:hidden")
+                img(src=data.imgs[0] style="width:100%")        
+
+block content
+    div.main
+        div#accordion
+            each val, index in data
+                +perf(val)
+block scripts
+    link(href="/css/jquery-ui.css" rel="stylesheet")
+    script(src="js/jquery-ui.js")
+    script.
+        $('#accordion').accordion({
+            header: "div.perf-header",
+            heightStyle: "content",
+            collapsible: true,
+            icons: false
+        })
+
+        function changeToBigImg(link) {
+            $('.ui-accordion-content-active > div > #boothimg > img').attr("src", link);
+        }

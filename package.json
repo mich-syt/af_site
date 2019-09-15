@@ -1,0 +1,26 @@
+{
+  "name": "af_site",
+  "version": "1.0.0",
+  "description": "Arts Fest Website 2016",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devstart": "nodemon app.js"
+  },
+  "keywords": [
+    "]"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jquery": "^3.1.0",
+    "pug": "^2.0.0-beta4",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0",
+    "pug-lint": "^2.3.0"
+  }
+}

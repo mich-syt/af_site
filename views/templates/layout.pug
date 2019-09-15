@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        block title
+            title #{title}
+        block head
+            include ./head.pug
+
+    body
+        block navbar
+            include ./navbar.pug
+        block splash
+            include ./splash.pug
+        block content
+        block footer
+            include ./footer.pug
+        block scripts
